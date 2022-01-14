@@ -1,0 +1,11 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "automate space combat for DOE roleplay game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "connor Fouks",
+  "license": "SSPL-1.0"
+}
