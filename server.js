@@ -10,7 +10,9 @@ var mongoDB = 'mongodb://10.0.1.42/dusk_of_empires';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
 .then((result) => { 
   console.log('connected to DB');
-});
+}).catch((err) => {
+  console.log(err);
+} );
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
