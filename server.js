@@ -14,18 +14,16 @@ var mongoDB = 'mongodb://doe_backend:AldrichHouse80@10.0.1.42/dusk_of_empires';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
 .then((result) => { 
   console.log('connected to DB');
+  //Seed the Database
+  Seeder();
 }).catch((err) => {
   console.log(err);
 } );
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-//Seed the Database
-Seeder();
-
 // App
 const app = express();
-
 
 app.get('/', (req, res) => {
   res.send("<html><h1>Hello World</h1></html>");
