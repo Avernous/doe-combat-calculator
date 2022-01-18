@@ -1,0 +1,62 @@
+[
+    {
+        "description": "Increase Max Fleet limit by 1",
+        "derived_from": "Position Ability",
+        "modifier": {
+            "attribute":"fleet limit",
+            "is_percent": false,
+            "is_variable": true,
+            "value": 1
+        }
+    },
+    {
+        "description": "Ability to increase a single fleets Attack Value by 10%",
+        "derived_from": "Position Ability",
+        "modifier": {
+            "attribute":"fleet attack",
+            "is_percent": true,
+            "is_variable": true,
+            "value": 0.10
+        }
+    },
+    {
+        "description": "10% per rank bonus to attack value well the general leads them. Does not stack with other generals.",
+        "derived_from": "Great Person - General",
+        "modifier": {
+            "attribute":"Army attack",
+            "is_percent": true,
+            "is_variable": true,
+            "min": 0.10,
+            "max": 0.50,
+            "step": 0.10,
+            "value": null
+        }
+    },
+    {
+        "description": "10% per rank bonus to attack value well the admiral leads them. Does not stack with other Admirals.",
+        "derived_from": "Great Person - Admiral",
+        "modifier": {
+            "attribute":"fleet attack",
+            "is_percent": true,
+            "is_variable": true,
+            "min": 0.10,
+            "max": 0.50,
+            "step": 0.10,
+            "value": null
+        }
+    },
+    {
+        "description": "+5% from Organization Headquarters (optional: great person HQ modifier)",
+        "derived_from": "Great Person - Admiral",
+        "modifier": {
+            "attribute":"any",
+            "is_percent": true,
+            "is_variable": true,
+            "min": 0.05,
+            "max": 0.20,
+            "step": 0.05,
+            "value": null
+        }
+    }
+    
+]
