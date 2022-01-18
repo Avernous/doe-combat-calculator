@@ -3,11 +3,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Faction = require('./models/faction.model.js');
+const Seeder = require('./seeders/seeder');
 
-// Constants
+//Constants
 const PORT = process.env.PORT || 8080;
 const HOST = '0.0.0.0';
 var mongoDB = 'mongodb://doe_backend:AldrichHouse80@10.0.1.42/dusk_of_empires';
+
+//Connect to database
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
 .then((result) => { 
   console.log('connected to DB');
@@ -16,6 +19,9 @@ mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
 } );
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+//Seed the Database
+Seeder();
 
 // App
 const app = express();
