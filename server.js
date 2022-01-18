@@ -2,7 +2,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
-const Faction = require('./models/faction.js');
+const Faction = require('./models/faction.model.js');
 
 // Constants
 const PORT = process.env.PORT || 8080;
