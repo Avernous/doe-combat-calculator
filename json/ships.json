@@ -1,0 +1,99 @@
+[
+    {
+        "name":"Corvette",
+        "health": 1,
+        "attack": 1,
+        "evasion": 1
+    },
+    {
+        "name":"Tranport",
+        "health": 1,
+        "attack": 0,
+        "evasion": 1
+    },
+    {
+        "name":"frigate",
+        "health": 3,
+        "attack": 2,
+        "evasion": 2
+    },
+    {
+        "name":"Destroyer",
+        "health": 5,
+        "attack": 3,
+        "evasion": 3
+    },
+    {
+        "name":"Light Cruiser",
+        "health": 8,
+        "attack": 5,
+        "evasion": 6
+    },
+    {
+        "name":"Heavy Cruiser",
+        "health": 10,
+        "attack": 6,
+        "evasion": 8
+    },
+    {
+        "name":"Battleship",
+        "health": 15,
+        "attack": 10,
+        "evasion": 10
+    }
+    ,
+    {
+        "name":"Dreadnaught",
+        "health": 25,
+        "attack": 15,
+        "evasion": 15
+    },
+    {
+        "name":"Escort Carrier",
+        "health": 8,
+        "attack": 2,
+        "evasion": 6
+    },
+    {
+        "name":"Carrier",
+        "health": 10,
+        "attack": 5,
+        "evasion": 8
+    },
+    {
+        "name":"Fleet Carrier",
+        "health": 15,
+        "attack": 6,
+        "evasion": 10
+    },
+    {
+        "name":"Stealth Craft",
+        "health": 3,
+        "attack": 1,
+        "evasion": 1
+    },
+    {
+        "name":"Pride of The Navy",
+        "health": 20,
+        "attack": 20,
+        "evasion": 15
+    },
+    {
+        "name":"Ark",
+        "health": 10,
+        "attack": 4,
+        "evasion": 4
+    },
+    {
+        "name":"Capital Ark",
+        "health": 15,
+        "attack": 6,
+        "evasion": 8
+    },
+    {
+        "name":"Pilgrim Ark",
+        "health": 3,
+        "attack": 0,
+        "evasion": 1
+    }
+]
