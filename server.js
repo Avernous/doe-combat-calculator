@@ -16,6 +16,8 @@ const mongoDBUrl = process.env.MONGO_DB_URL
 const mongoDBPort = process.env.MONGO_DB_PORT
 const mongoDBName = process.env.MONGO_DB_NAME
 var mongoDB = `mongodb://${mongoDBUsername}:${mongoDBPassword}@${mongoDBUrl}:${mongoDBPort}/${mongoDBName}`;
+console.log("trying to connect to database at:");
+console.log(`${mongoDBUrl}:${mongoDBPort}`);
 
 //if buffer commands is set to true and the database is not connected. no errors will be thrown for using model functions
 mongoose.set('bufferCommands', false);
@@ -64,4 +66,4 @@ app.use(bodyParser.json())
 app.use('/api/v1', router)
 
 app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+console.log(`Backend Server Running on: http://${HOST}:${PORT}`);
