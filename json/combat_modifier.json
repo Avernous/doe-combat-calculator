@@ -5,7 +5,7 @@
         "modifier": {
             "attribute":"fleet limit",
             "is_percent": false,
-            "is_variable": true,
+            "is_variable": false,
             "value": 1
         }
     },
@@ -15,7 +15,7 @@
         "modifier": {
             "attribute":"fleet attack",
             "is_percent": true,
-            "is_variable": true,
+            "is_variable": false,
             "value": 0.10
         }
     },
